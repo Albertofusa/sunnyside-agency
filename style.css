@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --color-red: hsl(7, 99%, 70%);
+  --color-yellow: hsl(51, 100%, 49%);
+  --color-green-letters-icons: hsl(167, 40%, 24%);
+  --color-green-backgrounds: hsl(168, 34%, 41%);
+  --color-blue-letters: hsl(198, 62%, 26%);
+  --color-dark-letters: hsl(212, 27%, 19%);
+  --color-gray-letters-dark: hsl(213, 9%, 39%);
+  --color-gray-letters: hsl(232, 10%, 55%);
+  --color-gray-letters-opacity: hsl(210, 4%, 67%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 18px;
+}
+
+button {
+  outline: 0;
+  border: 0;
+}
+
+::selection {
+  background-color: yellowgreen;
+  color: white;
+}
+
+a:link {
+  color: blue;
+}
+
+a:hover {
+  color: green;
+}
+
+a:active {
+  color: red;
+}
+
+.container {
+  width: 100%;
+}
+
+.header-imagen {
+  background-image: url(/img/image-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.logo {
+  height: 35px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 18px;
+  color: antiquewhite;
+}
+
+.button-link {
+  border-radius: 100px;
+  background-color: var(--color-white);
+  color: var(--color-dark-letters);
+  font-weight: 900;
+  width: 8em;
+  padding: 14px;
+  font-size: 13px;
+  font-family: "Fraunces", serif;
+  cursor: pointer;
+}
+
+.button-link:active {
+  transform: scale(0.99);
+}
+
+.header-title {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  color: var(--color-white);
+  font-size: 60px;
+  letter-spacing: 10px;
+  margin-bottom: 120px;
+}
+
+.header-arrow-down {
+  text-align: center;
+}
+
+.content {
+  height: 100rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-template-rows: repeat(3, minmax(200px, 1fr));
+}
+
+.content-first-four {
+  padding: 120px;
+}
+
+.content-first-four-title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.content-first-four-paragrahp {
+  color: var(--color-gray-letters);
+  font-family: "Fraunces", serif;
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+
+.content-first-four-subtitle {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-decoration: underline 5px var(--color-yellow);
+}
+
+.underline-four {
+  text-decoration: underline 5px var(--color-red);
+}
+
+.content-second-three-imagen {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content-five-six {
+  height: 100%;
+  width: 100%;
+  background-image: url(/img/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-six {
+  background-image: url(/img/image-photography.jpg);
+}
+
+.content-text-five-six {
+  text-align: center;
+  margin-top: 350px;
+}
+
+.content-five-six-title {
+  color: var(--color-green-letters-icons);
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.content-six-title {
+  color: var(--color-blue-letters);
+}
+
+.content-five-six-paragraph {
+  color: var(--color-green-backgrounds);
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  line-height: 25px;
+  font-size: 13px;
+}
+
+.content-six-paragraph {
+  color: var(--color-blue-letters);
+}
+
+.container-information-title {
+  text-align: center;
+  margin-top: 7em;
+  margin-bottom: 3em;
+}
+
+.card-information {
+  width: 80%;
+  height: 30rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+.container-information-title {
+  font-family: "Fraunces", serif;
+  color: var(--color-gray-letters-opacity);
+  letter-spacing: 4px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card-information-imagen {
+  border-radius: 100%;
+  height: 80px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.card-information-paragrahp {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  color: var(--color-gray-letters);
+  line-height: 25px;
+  margin-bottom: 90px;
+}
+
+.card-information-subtitle {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.card-information-end {
+  color: var(--color-gray-letters-opacity);
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.content-imagen {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  height: 350px;
+  width: 100%;
+  background-color: #8ad0c3;
+  text-align: center;
+}
+
+.logo-footer {
+  height: 40px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.nav-footer {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.link-footer {
+  color: var(--color-green-backgrounds);
+  font-weight: 600;
+  margin-bottom: 90px;
+}
+
+.icono {
+  margin: 10px;
+}
